@@ -1,13 +1,15 @@
 stichprobenmittelwert <- function(m,n) {
 
 	x = multi_stichprobe(m,n);
-	wert = 0;	
-
-	for(i in 1:100){
-		wert = wert + x[i];
+	wert = 0;
+	mittelwert = matrix(, nrow = m, ncol = 1);	
+	for(j in 1:m){
+		for(i in 1:n){
+			wert = wert + x[j,i];
+		}
+		mittelwert[j,1] = (wert/n);
+		wert = 0;
 	}
-	
-	mittelwert = (wert/100);
 
 	return(mittelwert);
 }	
