@@ -1,6 +1,6 @@
 histogram_variance <- function(m,n){
 
-	source("3.1.1_stichprobe.R");
+	source("multi_stichprobe.R");
 
 	x = multi_stichprobe(m,n);
 	variance = matrix(, nrow = m, ncol = 1);

@@ -1,11 +1,11 @@
-variance_mittelwert <- function(){
+variance_mittelwert <- function(m, b){
 
-	source("3.1.2_stichprobenmittelwert.R");
+	source("stichprobenmittelwert.R");
 
-	m = 100;
+	#m = 100;
 	variance = matrix(, nrow = 100, ncol = 1);
 
-	for(n in 1:100){
+	for(n in 1:b){
 		mittelwert = stichprobenmittelwert(m,n);
 		variance_temp = var(mittelwert);
 		variance[n,1] = variance_temp;
