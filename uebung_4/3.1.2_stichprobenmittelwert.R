@@ -1,5 +1,7 @@
 stichprobenmittelwert <- function(m,n) {
 
+	source("3.1.1_stichprobe.R");
+
 	x = multi_stichprobe(m,n);
 	wert = 0;
 	mittelwert = matrix(, nrow = m, ncol = 1);	

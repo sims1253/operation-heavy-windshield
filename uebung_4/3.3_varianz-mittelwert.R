@@ -1,5 +1,7 @@
 variance_mittelwert <- function(){
 
+	source("3.1.2_stichprobenmittelwert.R");
+
 	m = 100;
 	variance = matrix(, nrow = 100, ncol = 1);
 
