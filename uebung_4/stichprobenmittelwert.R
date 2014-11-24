@@ -12,6 +12,5 @@ stichprobenmittelwert <- function(m,n) {
 		mittelwert[j,1] = (wert/n);
 		wert = 0;
 	}
-
 	return(mittelwert);
 }	
