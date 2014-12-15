@@ -23,17 +23,24 @@
 	 
 	\subsection{Welchen der behandelten Hypothesentests k\"onnen sie einsetzen, um eine Abl\"osung des Sensors zu
 	 	detektieren? Beschreiben Sie kurz wie und unter welchen Voraussetzungen der Test anwendbar ist?}
-	Wir k\"onnen den Parametertest benutzen. Damit der Parametertest angewandt werden kann m\"ussen die Messwerte unabh\"angig sein und die Grundgesamtheit muss normalverteilt sein. Au\ss erdem muss ein Erwartungswert f\"ur die Grundgesamtheit gegeben sein.
+	Wir k\"onnen den Parametertest benutzen. Damit der Parametertest angewandt werden kann m\"ussen die Messwerte unabh\"angig sein und die Grundgesamtheit muss normalverteilt sein. Au\ss erdem muss ein Erwartungswert f\"ur die Grundgesamtheit existieren.
 	
 	\subsection{Bitte ordnen Sie die Messwerte den jeweiligen Klassen zu. Ist diese Einteilung sinnvoll?}
-	Siehe 7.1_hypothesentest.R \\
-	Eine bessere Aufteilung der Klassen w\"are, eine Klasse zu erstellen, die den Mittelwert nicht nur beinhaltet sondern ihn gleichmä\ss ig umschlie\ss t. Also sowohl in positive als auch negative Richtung gleich weit reicht. Von dieser ersten Klasse ausgehen die weiteren Klassen symmetrisch anlegen. Dadurch, dass der Mittelwert nicht mittig in einer Klasse liegt, sollte sich das Histogramm verschieben.
+	
+	Siehe 7.1\_hypothesentest.R \\
+	Eine bessere Aufteilung der Klassen w\"are, eine Klasse zu erstellen, die den Mittelwert nicht nur beinhaltet sondern ihn gleichm\"a\ss ig umschlie\ss t. Also sowohl in positive als auch negative Richtung gleich weit reicht. Von dieser ersten Klasse ausgehen die weiteren Klassen symmetrisch anlegen. Dadurch, dass der Mittelwert nicht mittig in einer Klasse liegt, sollte sich das Histogramm verschieben.
+	Au\ss erdem gibt es L\"ucken in den Klassen. Die erste m\"usste zum Beispiel $\leq$35.1 sein.
 	
 	\subsection{Bestimmen Sie die zu erwartenden H\"aufigkeiten.}
 	
 	
-	\subsection{Bestimmen sie die Pr\"ufgr\"o\ss e und ermitteln Sie das zugehörige Vertrauensniveau.}
+	\subsection{Bestimmen sie die Pr\"ufgr\"o\ss e und ermitteln Sie das zugeh\"orige Vertrauensniveau.}
+	Da die Varianz der Grundgesamtheit nicht gegeben ist, wird diese durch die Stichprobenvarianz gesch\"atzt.
+	Die Pr\"ufgr\"o\ss e ergibt sich folgenderma\ss en:
+	$$t=\frac{|x - \mu_0|}{s_x}\sqrt{n} = c$$
 	
+	
+	\subsection{Interpretieren Sie das Ergebnis.}
 
 
 	
