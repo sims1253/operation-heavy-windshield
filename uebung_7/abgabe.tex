@@ -47,19 +47,43 @@
 	Da die Varianz der Grundgesamtheit nicht gegeben ist, wird diese durch die Stichprobenvarianz gesch\"atzt.
 	Die Pr\"ufgr\"o\ss e ergibt sich folgenderma\ss en:
 	$$t=\frac{|x - \mu_0|}{s_x}\sqrt{n} = c$$
-	
+	F\"ur $\mu_0$ benutzen wir den Erwartungswert der Messwerte.\
+	Es ergibt sich: 
+	$$c = 1.102112$$ und $$p(c)\approx 0.73$$ (Messtechnik
+	Systemtheorie f\"ur Ingenieure und Informatiker, Fernando Puente Leon, Uwe Kiencke, Tabelle A.1)\\
+	F\"ur die Rechnung siehe 7.1\_hypothesentest.R 
 	
 	\subsection{Interpretieren Sie das Ergebnis.}
-
-
-	
-
-	\subsection{Bitte erl\"autern Sie die Bedeutung der Toleranzgrenze.}
-	\begin{enumerate}
-		\item Da der Mittelwert abh\"angig von zuf\"alligen Stichproben ist, ist er auch eine Zufallsvariable
-		\item wahr
-		\item wahr
-		\item falsch
-	\end{enumerate}
+	Da $\alpha$ normalerweise im Bereich von $0.001 \leq \alpha \leq 0.05$ gew\"ahlt wird, k\"onnen wir die Nullhypothese annehmen, da $P(c)\leq 1-\alpha$ f\"ur alle so zugelassenen $\alpha$ gilt.
+	 
+	 \section{Aufgabe 2}
+	 
+	 \subsection{Bitte erl\"autern Sie die Bedeutung der Toleranzgrenze.}
+	 Die Toleranzgrenze gibt an, innerhalb welchen Intervalls um das Sollma\ss  das Ma\ss  eines Werkst\"ucks liegen muss,
+	 um die gesetzten Qualit\"atsstandards zu erf\"ullen.
+	 
+	 \subsection{Berechnen Sie die Standardabweichung und die Abweichung von der Toleranzfeldmitte.}
+	 Siehe 7.2.2\_abweichung.R.
+	 
+	 \subsection{Zeichnen Sie schematisch das Toleranzfeldund die Verteilung deer Bauteill\"angen. Markieren Sie die
+	 	Toleranzfeldmitte und die Abweichung von der Toleranzfeldmitte.}
+	 Siehe 7.2.3.png.
+	 
+	 \subsection{Berechnen Sie den Prozessf\"ahigkeitsindex. Was bedeutet ein Prozessf\"ahigkeitsindex von $c_p$ $\ge$ 1?}
+	 Siehe 7.2.4\_prozessf\"ahigkeitsindex.R.
+	 Dies bedeutet, dass der Fertigungsprozess einen geringen Ausschu\ss  ($<0,27$ $\%$) aufweist.
+	 
+	 \subsection{Berechnen Sie den Prozessbrauchbarkeitsindex.}
+	 Siehe 7.2.5\_prozessbrauchbarkeitsindex.R.
+	 
+	 \subsection{Wie hoch ist die Ausschu\ss rate?}
+	 Die Ausschu\ss rate betr\"agt $\frac{4}{15} \approx$ 26,7.
+	 
+	 \section{Aufgabe 3}
+	 \subsection{Welcher Genauigkeitsklasse lassen sich die beiden Messger\"ate zuordnen?}
+	 
+	 \subsection{Welche Varianz erwarten sie f\"ur den pH-Wert?}
+	 
+	 \subsection{Wie gro\ss ist der maximale relative Fehler des pH-Wertes?}
 	
 \end{document}

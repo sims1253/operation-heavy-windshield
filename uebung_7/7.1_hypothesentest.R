@@ -10,7 +10,7 @@ hypothesentest <- function(){
 
 	hist_breaks = c(33.0, 35, 35.1, 35.6, 36.1, 36.6, 37.1, 37.6, 38.0, 39.0);
 
-	hist(hist_data,hist_breaks, freq = TRUE);
+	hist(hist_data,hist_breaks);
 	classes = matrix(, nrow=8, ncol=1);
 
 	classes[8,1] = pnorm(38, mean = 36.44, sd = 0.9, lower.tail = FALSE)
@@ -23,8 +23,16 @@ hypothesentest <- function(){
 	classes[1,1] = pnorm(35, mean = 36.44, sd = 0.9)
 
 	classes = classes * 90;
+	cat("Haeufigkeiten")
 	print(classes);
-	a = sqrt(var(hist_data));
-	print(a);
+
+	mean = mean(hist_data);
+	cat("erwartungswert")
+	print(mean);
+	s = 0.9 / sqrt(90);
+
+	cat("c: ")
+	c = abs(((36.44-mean)/ 0.9)* sqrt(90));
+	print(c);
 
 }
