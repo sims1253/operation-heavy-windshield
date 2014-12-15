@@ -1,4 +1,4 @@
-index <- function(){
+index_f <- function(){
 
 	source("7.2.2_abweichung.R");
 	s_a_tmp = abweichung(temp="s_a");
