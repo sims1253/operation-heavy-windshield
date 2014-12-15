@@ -22,7 +22,9 @@ hypothesentest <- function(){
 	classes[2,1] = pnorm(35.6, mean = 36.44, sd = 0.9) - pnorm(35.1, mean = 36.44, sd = 0.9)
 	classes[1,1] = pnorm(35, mean = 36.44, sd = 0.9)
 
-	classes = classes * 90
+	classes = classes * 90;
+	print(classes);
+	a = sqrt(var(hist_data));
+	print(a);
 
-	classes
 }
