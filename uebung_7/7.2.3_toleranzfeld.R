@@ -8,7 +8,7 @@ toleranzfeld <- function(){
 		data[i,1] = temp_data[i,1];
 	}
 
-	hist_breaks = seq(3.3,3.7,0.05);
+	hist_breaks = seq(3.2,3.7,0.05);
 	hist(data,hist_breaks);
 
 }
